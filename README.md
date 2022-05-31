@@ -48,11 +48,15 @@ de răspunsuri și de scorul fiecăruia (sau mai ușor, printați tot)
 ![poză](https://i.imgur.com/urNHu92.png)
 
 **Apăsați pe tasta S**
+
 **Partajați ecranul pe discord**
+
 **Pentru a afișa un anumit răspuns apăsați pe tasta cu numărul acelui răspuns**
 
 **Pentru a afișa un singur ⌧, apasă pe ⬅️**
+
 **Pentru a afișa două ⌧, apasă pe ⬆️**
+
 **Pentru a afișa trei ⌧, apasă pe ➡️**
 
 **Pentru a trece la următoarea întrebare apăsați pe tasta Q**
