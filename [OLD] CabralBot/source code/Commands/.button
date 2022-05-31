@@ -1,0 +1,6 @@
+$nomention
+$title[Primul care apasă răspunde]
+$description[Apăsați!]
+$addButton[yes;camila;Buton;Primary;no]
+$setVar[canBePressed;true]
+$deleteIn[10]
