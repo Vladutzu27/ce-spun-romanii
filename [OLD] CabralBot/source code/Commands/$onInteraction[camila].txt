@@ -1,0 +1,4 @@
+$nomention
+$onlyIf[$getVar[canBePressed]==true; Scuze, Cineva a apăsat deja acest buton]
+$username a fost primul/prima care să apese
+$setVar[canBePressed; false]
