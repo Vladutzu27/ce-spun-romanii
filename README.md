@@ -61,4 +61,6 @@ de răspunsuri și de scorul fiecăruia (sau mai ușor, printați tot)
 
 **Pentru a trece la următoarea întrebare apăsați pe tasta Q**
 
+ups, am uitat, dar ca sa dai reveal la raspuns apesi pe cifra aia, pe nuberpad sau pe tastatura
+
 ## COMING SOON: Instrucțiuni folosire bot
