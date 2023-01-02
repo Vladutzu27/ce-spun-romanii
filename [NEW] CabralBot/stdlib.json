@@ -1,0 +1,28 @@
+{
+  "name": "ghiocel/my-new-project",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/bot_mention.js": {
+      "name": "discord.bot_mention"
+    },
+    "functions/events/discord/command/regulament.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "regulament"
+      }
+    },
+    "functions/events/discord/command/buton.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "buton"
+      }
+    },
+    "functions/events/discord/message/button/interaction.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "cămilă"
+      }
+    }
+  }
+}
