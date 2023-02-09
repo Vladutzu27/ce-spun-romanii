@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(180deg, #224aec, #32d8d8);
+}
+h1 {
+    font-size: 55;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+input {
+    font-size: 30;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: aquamarine;
+}
+#q1, #q2, #q3, #q4, #q5, #q6{
+    width: 100%;
+}
+#linie {
+    display: flex;
+}
