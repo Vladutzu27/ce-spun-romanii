@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background: linear-gradient(180deg, #224aec, #32d8d8);
+    background: linear-gradient(100deg, #224aec, #55abe4);
 }
 h1 {
     font-size: 55;
@@ -10,14 +10,20 @@ h1 {
 input {
     font-size: 30;
     font-weight: bold;
-    border: 1px solid #000;
+    color : #dddddd;
+    border: 4px solid #ffffff;
     border-radius: 5px;
     padding: 5px;
-    background-color: aquamarine;
+    margin: 5px;
+    background: linear-gradient(#2d58e6, #0a2db5);
 }
 #q1, #q2, #q3, #q4, #q5, #q6{
     width: 100%;
 }
 #linie {
     display: flex;
+}
+#maimuta {
+    width: 100%;
+    height: auto;
 }

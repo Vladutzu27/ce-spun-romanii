@@ -47,11 +47,8 @@ window.onload = function() {
     const t6_6 = document.getElementById("6_6");
     const t6_7 = document.getElementById("6_7");
     const t6_8 = document.getElementById("6_8");
+    var nume = document.getElementById("name");
     const downloadButton = document.getElementById("download-button");
-
-    if (nume == null) {
-      nume = "fara_nume"
-    }
 
     downloadButton.addEventListener("click", function() {
       const data = {
@@ -122,6 +119,9 @@ window.onload = function() {
             a8: t6_8.value
         }
       };
+      if (nume == undefined) {
+        nume = "fara_nume"
+      }
       const json = JSON.stringify(data);
       const blob = new Blob([json], { type: "application/json" });
       const href = URL.createObjectURL(blob);
