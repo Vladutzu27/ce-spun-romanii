@@ -1,4 +1,4 @@
-# CURRENTLY REMAKING THIS GAME IN UNITY! STAY TUNED!
+# CURRENTLY REMAKING THIS GAME IN UNITY! SIT's ALMOST DONE, BUT I WILL ONLY MAKE IT OPEN-SOURCE ONCE ITS DONE, SINCE I HAVE DOME PROBLEMS WITH USING GITHUB FOR ACTUAL VERSION CONTROL WITH UNITY FOR SOME REASON
 
 # [ENGLISH]: About "Ce spun românii!" engine
 This is and engine made to play "Ce spun românii", a family feud type tv show in Romanian. I made it about 3 months ago, on 12th of February, but it kinda sucks so i wanted to improve it. It is made of two parts: a Discord bot for the button pressing and a scratch game. The bot sucks ass and isnt active unless you pay or watch ads, since it was made in [BDFD](https://nilpointer-software.github.io/bdfd-wiki/foreword.html) using BDFScript, and that is why i wanted to remake it using Autocode in JavaScript. 
