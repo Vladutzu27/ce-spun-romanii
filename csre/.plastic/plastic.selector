@@ -1,0 +1,4 @@
+repository "csre@Ghiocel_Games@cloud"
+  path "/"
+    br "/main"
+    co "/main"
