@@ -41,23 +41,23 @@ public class MainScript : MonoBehaviour
     }
     void Start()
     {
-        A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q1[1]);
-        A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q1[2]);
-        A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q1[3]);
-        A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q1[4]);
-        A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q1[5]);
-        A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q1[6]);
-        A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q1[7]);
-        A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q1[8]);
+        A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q1a1);
+        A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q1a2);
+        A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q1a3);
+        A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q1a4);
+        A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q1a5);
+        A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q1a6);
+        A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q1a7);
+        A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q1a8);
 
-        S1.text = TextScript.instance.GetScore(Raspunsuri.instance.Q1[1]);
-        S3.text = TextScript.instance.GetScore(Raspunsuri.instance.Q1[3]);
-        S4.text = TextScript.instance.GetScore(Raspunsuri.instance.Q1[4]);
-        S5.text = TextScript.instance.GetScore(Raspunsuri.instance.Q1[5]);
-        S6.text = TextScript.instance.GetScore(Raspunsuri.instance.Q1[6]);
-        S2.text = TextScript.instance.GetScore(Raspunsuri.instance.Q1[2]);
-        S7.text = TextScript.instance.GetScore(Raspunsuri.instance.Q1[7]);
-        S8.text = TextScript.instance.GetScore(Raspunsuri.instance.Q1[8]);
+        S1.text = TextScript.instance.GetScore(Raspunsuri.instance.q1a1);
+        S3.text = TextScript.instance.GetScore(Raspunsuri.instance.q1a2);
+        S4.text = TextScript.instance.GetScore(Raspunsuri.instance.q1a3);
+        S5.text = TextScript.instance.GetScore(Raspunsuri.instance.q1a4);
+        S6.text = TextScript.instance.GetScore(Raspunsuri.instance.q1a5);
+        S2.text = TextScript.instance.GetScore(Raspunsuri.instance.q1a6);
+        S7.text = TextScript.instance.GetScore(Raspunsuri.instance.q1a7);
+        S8.text = TextScript.instance.GetScore(Raspunsuri.instance.q1a8);
     }
 
     // Update is called once per frame
@@ -79,111 +79,111 @@ public class MainScript : MonoBehaviour
             RaspunsuriScript.instance.Ascunde();
             if (question == 1)
             {
-                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q2[1]);
-                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q2[2]);
-                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q2[3]);
-                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q2[4]);
-                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q2[5]);
-                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q2[6]);
-                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q2[7]);
-                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q2[8]);
+                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q2a1);
+                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q2a2);
+                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q2a3);
+                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q2a4);
+                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q2a5);
+                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q2a6);
+                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q2a7);
+                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q2a8);
 
-                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.Q2[1]);
-                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.Q2[3]);
-                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.Q2[4]);
-                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.Q2[5]);
-                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.Q2[6]);
-                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.Q2[2]);
-                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.Q2[7]);
-                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.Q2[8]);
+                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.q2a1);
+                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.q2a2);
+                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.q2a3);
+                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.q2a4);
+                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.q2a5);
+                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.q2a6);
+                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.q2a7);
+                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.q2a8);
 
                 question++;
             }
             else if (question == 2)
             {
-                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q3[1]);
-                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q3[2]);
-                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q3[3]);
-                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q3[4]);
-                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q3[5]);
-                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q3[6]);
-                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q3[7]);
-                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q3[8]);
+                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q3a1);
+                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q3a2);
+                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q3a3);
+                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q3a4);
+                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q3a5);
+                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q3a6);
+                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q3a7);
+                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q3a8);
 
-                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.Q3[1]);
-                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.Q3[3]);
-                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.Q3[4]);
-                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.Q3[5]);
-                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.Q3[6]);
-                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.Q3[2]);
-                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.Q3[7]);
-                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.Q3[8]);
+                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.q3a1);
+                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.q3a2);
+                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.q3a3);
+                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.q3a4);
+                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.q3a5);
+                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.q3a6);
+                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.q3a7);
+                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.q3a8);
 
                 question++;
             }
             else if(question == 3)
             {
-                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q4[1]);
-                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q4[2]);
-                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q4[3]);
-                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q4[4]);
-                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q4[5]);
-                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q4[6]);
-                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q4[7]);
-                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q4[8]);
+                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q4a1);
+                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q4a2);
+                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q4a3);
+                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q4a4);
+                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q4a5);
+                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q4a6);
+                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q4a7);
+                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q4a8);
 
-                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.Q4[1]);
-                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.Q4[3]);
-                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.Q4[4]);
-                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.Q4[5]);
-                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.Q4[6]);
-                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.Q4[2]);
-                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.Q4[7]);
-                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.Q4[8]);
+                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.q4a1);
+                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.q4a2);
+                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.q4a3);
+                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.q4a4);
+                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.q4a5);
+                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.q4a6);
+                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.q4a7);
+                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.q4a8);
 
                 question++;
             }
             else if (question == 4)
             {
-                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q5[1]);
-                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q5[2]);
-                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q5[3]);
-                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q5[4]);
-                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q5[5]);
-                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q5[6]);
-                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q5[7]);
-                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q5[8]);
+                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q5a1);
+                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q5a2);
+                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q5a3);
+                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q5a4);
+                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q5a5);
+                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q5a6);
+                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q5a7);
+                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q5a8);
 
-                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.Q5[1]);
-                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.Q5[3]);
-                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.Q5[4]);
-                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.Q5[5]);
-                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.Q5[6]);
-                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.Q5[2]);
-                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.Q5[7]);
-                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.Q5[8]);
+                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.q5a1);
+                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.q5a2);
+                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.q5a3);
+                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.q5a4);
+                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.q5a5);
+                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.q5a6);
+                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.q5a7);
+                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.q5a8);
 
                 question++;
             }
             else if (question == 5)
             {
-                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q6[1]);
-                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q6[2]);
-                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q6[3]);
-                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q6[4]);
-                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q6[5]);
-                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q6[6]);
-                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q6[7]);
-                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.Q6[8]);
+                A1.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q6a1);
+                A2.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q6a2);
+                A3.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q6a3);
+                A4.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q6a4);
+                A5.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q6a5);
+                A6.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q6a6);
+                A7.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q6a7);
+                A8.text = TextScript.instance.GetAnswer(Raspunsuri.instance.q6a8);
 
-                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.Q6[1]);
-                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.Q6[3]);
-                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.Q6[4]);
-                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.Q6[5]);
-                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.Q6[6]);
-                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.Q6[2]);
-                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.Q6[7]);
-                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.Q6[8]);
+                S1.text = TextScript.instance.GetScore(Raspunsuri.instance.q6a1);
+                S3.text = TextScript.instance.GetScore(Raspunsuri.instance.q6a2);
+                S4.text = TextScript.instance.GetScore(Raspunsuri.instance.q6a3);
+                S5.text = TextScript.instance.GetScore(Raspunsuri.instance.q6a4);
+                S6.text = TextScript.instance.GetScore(Raspunsuri.instance.q6a5);
+                S2.text = TextScript.instance.GetScore(Raspunsuri.instance.q6a6);
+                S7.text = TextScript.instance.GetScore(Raspunsuri.instance.q6a7);
+                S8.text = TextScript.instance.GetScore(Raspunsuri.instance.q6a8);
 
                 question++;
             }

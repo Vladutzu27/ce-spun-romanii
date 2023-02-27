@@ -37,32 +37,32 @@ public class ScoreScript : MonoBehaviour
         {
             if (MainScript.instance.question == 1 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q1[1]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q1a1), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 2 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q2[1]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q2a1), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 3 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q3[1]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q3a1), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 4 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q4[1]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q4a1), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 5 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q5[1]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q5a1), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 6 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q6[1]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q6a1), out z);
                 AddPoints(z);
             }
         }
@@ -70,32 +70,32 @@ public class ScoreScript : MonoBehaviour
         {
             if (MainScript.instance.question == 1 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q1[2]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q1a2), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 2 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q2[2]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q2a2), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 3 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q3[2]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q3a2), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 4 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q4[2]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q4a2), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 5 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q5[2]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q5a2), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 6 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q6[2]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q6a2), out z);
                 AddPoints(z);
             }
         }
@@ -103,32 +103,32 @@ public class ScoreScript : MonoBehaviour
         {
             if (MainScript.instance.question == 1 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q1[3]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q1a3), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 2 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q2[3]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q2a3), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 3 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q3[3]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q3a3), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 4 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q4[3]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q4a3), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 5 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q5[3]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q5a3), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 6 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q6[3]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q6a3), out z);
                 AddPoints(z);
             }
         }
@@ -136,32 +136,32 @@ public class ScoreScript : MonoBehaviour
         {
             if (MainScript.instance.question == 1 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q1[4]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q1a4), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 2 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q2[4]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q2a4), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 3 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q3[4]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q3a4), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 4 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q4[4]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q4a4), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 5 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q5[4]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q5a4), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 6 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q6[4]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q6a4), out z);
                 AddPoints(z);
             }
         }
@@ -169,32 +169,32 @@ public class ScoreScript : MonoBehaviour
         {
             if (MainScript.instance.question == 1 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q1[5]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q1a5), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 2 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q2[5]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q2a5), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 3 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q3[5]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q3a5), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 4 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q4[5]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q4a5), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 5 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q5[5]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q5a5), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 6 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q6[5]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q6a5), out z);
                 AddPoints(z);
             }
         }
@@ -202,32 +202,32 @@ public class ScoreScript : MonoBehaviour
         {
             if (MainScript.instance.question == 1 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q1[6]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q1a6), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 2 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q2[6]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q2a6), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 3 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q3[6]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q3a6), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 4 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q4[6]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q4a6), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 5 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q5[6]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q5a6), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 6 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q6[6]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q6a6), out z);
                 AddPoints(z);
             }
         }
@@ -235,32 +235,32 @@ public class ScoreScript : MonoBehaviour
         {
             if (MainScript.instance.question == 1 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q1[7]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q1a7), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 2 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q2[7]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q2a7), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 3 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q3[7]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q3a7), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 4 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q4[7]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q4a7), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 5 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q5[7]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q5a7), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 6 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q6[7]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q6a7), out z);
                 AddPoints(z);
             }
         }
@@ -268,32 +268,32 @@ public class ScoreScript : MonoBehaviour
         {
             if (MainScript.instance.question == 1 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q1[8]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q1a8), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 2 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q2[8]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q2a8), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 3 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q3[8]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q3a8), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 4 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q4[8]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q4a8), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 5 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q5[8]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q5a8), out z);
                 AddPoints(z);
             }
             if (MainScript.instance.question == 6 && Safe == false)
             {
-                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.Q6[8]), out z);
+                int.TryParse(TextScript.instance.GetScore(Raspunsuri.instance.q6a8), out z);
                 AddPoints(z);
             }
         }
