@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class Raspunsuri : MonoBehaviour
 {
@@ -16,12 +18,146 @@ public class Raspunsuri : MonoBehaviour
         }
     }
 
+    [NonSerialized]
+    public string filePath = "Assets/S6E210.json";
 
-    public List<string> Q1 = new List<string>() { "Am rugat o sută de români să completeze fraza: Sâmbătă mergem în vizită la cuscrii și știi că ei se bucură dacă le aducem și o sticlă de...", "Vin$36", "Șampanie$30", "Lichior$10", "Țuică$9", "Pălincă$6", "Coniac$5", "Ulei$2", "Suc$2" };
-    public List<string> Q2 = new List<string>() { "Pe postul RA TV din Regatul Animalelor, ce vietate prezintă, in fiecare duminică „Viața Junglei”?", "Leul$27", "Maimuța$13", "Girafa$13", "Tigrul$8", "Zebra$7", "Elefantul$6", "Vulpe$6", "Ursul$6" };
-    public List<string> Q3 = new List<string>() { "La ce eveniment te duci cu telefonul încărcat la maxim pentru că știi că o să faci multe poze?", "Nuntă$39", "Botez$20", "Petrecere$11", "Concert$9", "Aniversare$8", "Balul Bobocilior$5", "Serbare$5", "Revelion$3" };
-    public List<string> Q4 = new List<string>() { "Ai o găleată cu mere. Ce faci cu ele?", "Compot$31", "Plăcintă$26", "Gem$14", "Suc$11", "Țuică$5", "Cidru$5", "Prăjitură$4", "Dulceață$4" };
-    public List<string> Q5 = new List<string>() { "Pe lângă plopii fără soț, ce mai vezi în parc?", "Bancă$24", "Tei$11", "Stejar$10", "Brad$10", "Castan$10", "Flori$9", "Salcâm$6", "Iarbă$5" };
-    public List<string> Q6 = new List<string>() { "Ce se împrăștie foarte ușor dar îți ia o grămadă să aduni la loc?", "Orez$22", "Zahăr$18", "Mărgelele$14", "Făină$13", "Sare$11", "Semințe$9", "Fasole$7", "Piper$6" };
+    [System.Serializable]
+    public class MyData
+    {
+        public Question q1;
+        public Question q2;
+        public Question q3;
+        public Question q4;
+        public Question q5;
+        public Question q6;
+    }
+    
+    [System.Serializable]
+    public class Question
+    {
+        public string q;
+        public string a1;
+        public string a2;
+        public string a3;
+        public string a4;
+        public string a5;
+        public string a6;
+        public string a7;
+        public string a8;
+    }
 
+    public string q1a1;
+    public string q1a2;
+    public string q1a3;
+    public string q1a4;
+    public string q1a5;
+    public string q1a6;
+    public string q1a7;
+    public string q1a8;
+    public string q2a1;
+    public string q2a2;
+    public string q2a3;
+    public string q2a4;
+    public string q2a5;
+    public string q2a6;
+    public string q2a7;
+    public string q2a8;
+    public string q3a1;
+    public string q3a2;
+    public string q3a3;
+    public string q3a4;
+    public string q3a5;
+    public string q3a6;
+    public string q3a7;
+    public string q3a8;
+    public string q4a1;
+    public string q4a2;
+    public string q4a3;
+    public string q4a4;
+    public string q4a5;
+    public string q4a6;
+    public string q4a7;
+    public string q4a8;
+    public string q5a1;
+    public string q5a2;
+    public string q5a3;
+    public string q5a4;
+    public string q5a5;
+    public string q5a6;
+    public string q5a7;
+    public string q5a8;
+    public string q6a1;
+    public string q6a2;
+    public string q6a3;
+    public string q6a4;
+    public string q6a5;
+    public string q6a6;
+    public string q6a7;
+    public string q6a8;
+    public string q1q;
+    public string q2q;
+    public string q3q;
+    public string q4q;
+    public string q5q;
+    public string q6q;
+
+    void Start()
+    {
+        string jsonString = File.ReadAllText(filePath);
+        MyData myData = JsonUtility.FromJson<MyData>(jsonString);
+        q1a1 = myData.q1.a1;
+        q1a2 = myData.q1.a2;
+        q1a3 = myData.q1.a3;
+        q1a4 = myData.q1.a4;
+        q1a5 = myData.q1.a5;
+        q1a6 = myData.q1.a6;
+        q1a7 = myData.q1.a7;
+        q1a8 = myData.q1.a8;
+        q2a1 = myData.q2.a1;
+        q2a2 = myData.q2.a2;
+        q2a3 = myData.q2.a3;
+        q2a4 = myData.q2.a4;
+        q2a5 = myData.q2.a5;
+        q2a6 = myData.q2.a6;
+        q2a7 = myData.q2.a7;
+        q2a8 = myData.q2.a8;
+        q3a1 = myData.q3.a1;
+        q3a2 = myData.q3.a2;
+        q3a3 = myData.q3.a3;
+        q3a4 = myData.q3.a4;
+        q3a5 = myData.q3.a5;
+        q3a6 = myData.q3.a6;
+        q3a7 = myData.q3.a7;
+        q3a8 = myData.q3.a8;
+        q4a1 = myData.q4.a1;
+        q4a2 = myData.q4.a2;
+        q4a3 = myData.q4.a3;
+        q4a4 = myData.q4.a4;
+        q4a5 = myData.q4.a5;
+        q4a6 = myData.q4.a6;
+        q4a7 = myData.q4.a7;
+        q4a8 = myData.q4.a8;
+        q5a1 = myData.q5.a1;
+        q5a2 = myData.q5.a2;
+        q5a3 = myData.q5.a3;
+        q5a4 = myData.q5.a4;
+        q5a5 = myData.q5.a5;
+        q5a6 = myData.q5.a6;
+        q5a7 = myData.q5.a7;
+        q5a8 = myData.q5.a8;
+        q6a1 = myData.q6.a1;
+        q6a2 = myData.q6.a2;
+        q6a3 = myData.q6.a3;
+        q6a4 = myData.q6.a4;
+        q6a5 = myData.q6.a5;
+        q6a6 = myData.q6.a6;
+        q6a7 = myData.q6.a7;
+        q6a8 = myData.q6.a8;
+        q1q = myData.q1.q;
+        q2q = myData.q2.q;
+        q3q = myData.q3.q;
+        q4q = myData.q4.q;
+        q5q = myData.q5.q;
+        q6q = myData.q6.q;
+    }
 }
