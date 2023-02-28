@@ -31,7 +31,7 @@ public class Raspunsuri : MonoBehaviour
         public Question q5;
         public Question q6;
     }
-
+    
     [System.Serializable]
     public class Question
     {
