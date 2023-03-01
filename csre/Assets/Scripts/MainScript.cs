@@ -36,6 +36,10 @@ public class MainScript : MonoBehaviour
     public TextMeshProUGUI S7;
     public TextMeshProUGUI S8;
 
+    public GameObject Background;
+    public Sprite ans7;
+    public Sprite ans6;
+
     // Start is called before the first frame update
 
     private void Awake()
@@ -44,8 +48,21 @@ public class MainScript : MonoBehaviour
     }
     void Start()
     {
-        Debug.Log("in ms -> " + JSONScript.instance.q1a1);
-        Debug.Log("coaiele mele -> " + JSONScript.instance.decoi);
+        /*
+        if (CateRasp.instance.CateRaspunsuri(1) == 8)
+        {
+            Background.GetComponent<SpriteRenderer>().sprite = Background.GetComponent<Sprite>();
+        }
+        else if (CateRasp.instance.CateRaspunsuri(1) == 7)
+        {
+            Background.GetComponent<SpriteRenderer>().sprite = ans7.GetComponent<Sprite>();
+        }
+        else if (CateRasp.instance.CateRaspunsuri(1) == 6)
+        {
+            Background.GetComponent<SpriteRenderer>().sprite = ans6.GetComponent<Sprite>();
+        }
+        */
+
         Q.text = JSONScript.instance.q1q;
 
         A1.text = TextScript.instance.GetAnswer(JSONScript.instance.q1a1);

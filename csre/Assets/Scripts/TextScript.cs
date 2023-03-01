@@ -44,10 +44,17 @@ public class TextScript : MonoBehaviour
     }
     public string GetAnswer(string x)
     {
-        return x.Split('$')[0];
+        if (x != "")
+            return x.Split('$')[0];
+        else
+            return "";
     }
+
     public string GetScore(string x)
     {
-        return x.Split('$')[1];
+        if (x != "")
+            return x.Split('$')[1];
+        else
+            return "";
     }
 }

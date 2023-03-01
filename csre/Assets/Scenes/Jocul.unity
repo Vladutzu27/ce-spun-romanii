@@ -242,6 +242,9 @@ MonoBehaviour:
   S6: {fileID: 801868122}
   S7: {fileID: 2123212019}
   S8: {fileID: 65563891}
+  Background: {fileID: 0}
+  ans7: {fileID: 0}
+  ans6: {fileID: 0}
 --- !u!114 &37369283
 MonoBehaviour:
   m_ObjectHideFlags: 0

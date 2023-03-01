@@ -108,16 +108,16 @@ public class SettingsScript : MonoBehaviour
             off.Play();
         }
     }
-
+    /*
     public void FullscreenOn()
     {
         if (FullscreenBool)
         {
-            Fullscreen.SetActive(false);
+            Screen.fullscreen(false);
         }
         else
         {
-            Fullscreen.SetActive(true);
+            Screen.fullscreen(true);
         }
         FullscreenBool = !FullscreenBool;
         UnityEngine.Debug.Log("Fullscreen");
@@ -130,4 +130,5 @@ public class SettingsScript : MonoBehaviour
             off.Play();
         }
     }
+    */
 }
