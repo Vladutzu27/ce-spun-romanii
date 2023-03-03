@@ -3,7 +3,30 @@ guid: 0f57955572df9304e8c54eb7156d5373
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bun: {instanceID: 0}
+  - bzz: {instanceID: 0}
+  - jingle: {instanceID: 0}
+  - Q: {instanceID: 0}
+  - A1: {instanceID: 0}
+  - A2: {instanceID: 0}
+  - A3: {instanceID: 0}
+  - A4: {instanceID: 0}
+  - A5: {instanceID: 0}
+  - A6: {instanceID: 0}
+  - A7: {instanceID: 0}
+  - A8: {instanceID: 0}
+  - S1: {instanceID: 0}
+  - S2: {instanceID: 0}
+  - S3: {instanceID: 0}
+  - S4: {instanceID: 0}
+  - S5: {instanceID: 0}
+  - S6: {instanceID: 0}
+  - S7: {instanceID: 0}
+  - S8: {instanceID: 0}
+  - Background: {instanceID: 0}
+  - ans7: {instanceID: 0}
+  - ans6: {fileID: 21300000, guid: 91041fad8ad27104c8b782ae49357124, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

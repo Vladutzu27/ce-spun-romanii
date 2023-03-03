@@ -6,11 +6,13 @@ public class JSONScript : MonoBehaviour
 {
 
     public static JSONScript instance;
+    public TextAsset jsonFile;
 
     void Awake()
     {
         instance = this;
-        string jsonString = File.ReadAllText(filePath);
+
+        string jsonString = jsonFile.text;
         MyData myData = JsonUtility.FromJson<MyData>(jsonString);
         q1a1 = myData.q1.a1;
         q1a2 = myData.q1.a2;

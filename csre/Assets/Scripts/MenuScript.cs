@@ -18,7 +18,7 @@ public class MenuScript : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Jocul");
+        SceneManager.LoadScene("SelectQuestion");
         UnityEngine.Debug.Log("Jocul a inceput");
     }
 

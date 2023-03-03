@@ -44,10 +44,36 @@ public class TextScript : MonoBehaviour
     }
     public string GetAnswer(string x)
     {
+<<<<<<< Updated upstream
         return x.Split('$')[0];
+=======
+        if (x != null)
+            return x.Split('$')[0];
+        else
+            return "";
+>>>>>>> Stashed changes
     }
     public string GetScore(string x)
     {
+<<<<<<< Updated upstream
         return x.Split('$')[1];
+=======
+        if (x != null)
+            return x.Split('$')[1];
+        else
+            return "";
+>>>>>>> Stashed changes
+    }
+
+    public float GetSize(string x)
+    {
+        if(x.Length < 15)
+        {
+            return 86.38f;
+        }
+        else
+        {
+            return 60f;
+        }
     }
 }

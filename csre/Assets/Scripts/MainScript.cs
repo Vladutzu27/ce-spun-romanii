@@ -56,6 +56,14 @@ public class MainScript : MonoBehaviour
         A6.text = TextScript.instance.GetAnswer(JSONScript.instance.q1a6);
         A7.text = TextScript.instance.GetAnswer(JSONScript.instance.q1a7);
         A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q1a8);
+        A1.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q1a1));
+        A2.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q1a2));
+        A3.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q1a3));
+        A4.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q1a4));
+        A5.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q1a5));
+        A6.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q1a6));
+        A7.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q1a7));
+        A8.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q1a8));
 
         S1.text = TextScript.instance.GetScore(JSONScript.instance.q1a1);
         S2.text = TextScript.instance.GetScore(JSONScript.instance.q1a2);
@@ -96,6 +104,14 @@ public class MainScript : MonoBehaviour
                 A6.text = TextScript.instance.GetAnswer(JSONScript.instance.q2a6);
                 A7.text = TextScript.instance.GetAnswer(JSONScript.instance.q2a7);
                 A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q2a8);
+                A1.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q2a1));
+                A2.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q2a2));
+                A3.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q2a3));
+                A4.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q2a4));
+                A5.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q2a5));
+                A6.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q2a6));
+                A7.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q2a7));
+                A8.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q2a8));
 
                 S1.text = TextScript.instance.GetScore(JSONScript.instance.q2a1);
                 S2.text = TextScript.instance.GetScore(JSONScript.instance.q2a2);
@@ -120,6 +136,14 @@ public class MainScript : MonoBehaviour
                 A6.text = TextScript.instance.GetAnswer(JSONScript.instance.q3a6);
                 A7.text = TextScript.instance.GetAnswer(JSONScript.instance.q3a7);
                 A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q3a8);
+                A1.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q3a1));
+                A2.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q3a2));
+                A3.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q3a3));
+                A4.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q3a4));
+                A5.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q3a5));
+                A6.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q3a6));
+                A7.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q3a7));
+                A8.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q3a8));
 
                 S1.text = TextScript.instance.GetScore(JSONScript.instance.q3a1);
                 S2.text = TextScript.instance.GetScore(JSONScript.instance.q3a2);
@@ -144,6 +168,14 @@ public class MainScript : MonoBehaviour
                 A6.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a6);
                 A7.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a7);
                 A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a8);
+                A1.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q4a1));
+                A2.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q4a2));
+                A3.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q4a3));
+                A4.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q4a4));
+                A5.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q4a5));
+                A6.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q4a6));
+                A7.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q4a7));
+                A8.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q4a8));
 
                 S1.text = TextScript.instance.GetScore(JSONScript.instance.q4a1);
                 S2.text = TextScript.instance.GetScore(JSONScript.instance.q4a2);
@@ -193,8 +225,8 @@ public class MainScript : MonoBehaviour
                 A7.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a7);
                 A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a8);
 
-                S1.text = TextScript.instance.GetScore(JSONScript.instance.q6a2);
-                S2.text = TextScript.instance.GetScore(JSONScript.instance.q6a1);
+                S1.text = TextScript.instance.GetScore(JSONScript.instance.q6a1);
+                S2.text = TextScript.instance.GetScore(JSONScript.instance.q6a2);
                 S3.text = TextScript.instance.GetScore(JSONScript.instance.q6a3);
                 S4.text = TextScript.instance.GetScore(JSONScript.instance.q6a4);
                 S5.text = TextScript.instance.GetScore(JSONScript.instance.q6a5);
