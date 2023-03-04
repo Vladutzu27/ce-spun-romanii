@@ -1,12 +1,25 @@
-# CURRENTLY REMAKING THIS GAME IN UNITY! Open-sourced it!
+# Reguli Generale Ce spun Românii
 
-# [ENGLISH]: About "Ce spun românii!" engine
-This is and engine made to play "Ce spun românii", a family feud type tv show in Romanian. I made it about 3 months ago, on 12th of February, but it kinda sucks so i wanted to improve it. It is made of two parts: a Discord bot for the button pressing and a scratch game. The bot sucks ass and isnt active unless you pay or watch ads, since it was made in [BDFD](https://nilpointer-software.github.io/bdfd-wiki/foreword.html) using BDFScript, and that is why i wanted to remake it using Autocode in JavaScript. 
-(the rest of the documentation is not in english because the engine is not compatible with family feud screenshots)
+* Sunt șase runde, unde fiecare rundă are câte o întrebare.
+* Sunt două echipe, de obicei familii.
+* Fiecare echipa are un căpitan
+* La prima întrbare, vin căpitanii în față și decid cine răspunde primul (pot face asta prin dat cu banul, cu zarul, sau, daca joaca online, prin integrarea jocului cu Discord)
+* Fiecare întrebare are 8, 7 sau 6 răspunsuri pe panou, numerotate de la 1 la 8, și fiecare răspuns are un punctaj.
+* Gazda/Prezentatorul pune prima întrebare, după care primul căpitan răspunde, Apoi al doilea. Al carui raspuns are scorul mai mare, are drepul de „a juca” sau „a pasa”. Dacă joacă, echipa lui începe, dar dacă alege să paseze, începe echipa adversă.
+* Fiecare membru al acelei echipe răspunde, pe rând la întrebare, încercând să nimerească răspunsurile de pe panou. Pentru fiecare răspuns care nu este pe panou, echipa primește un X. La două X-uri, cealaltă echipă are dreptul să se sfătuiască, adică să discute un răspuns posibil la acea întrebare.
+* Dacă se ia și al treilea X, fiecare membru din echipa care s-a sfătuit spune un răspuns posibil, iar căpitanul decide care este răspunsul lor final.
+* Dacă acel răspuns este într-adevăr pe panou, aceștia câștigă runda respectivă și la punctajul lor se adaugă suma punctajelor răspunsurilor descoperite și se trece la următoarea rundă.
+* În puținele cazuri în care o echipă nimerește toate răspunsurile, câștigă direct.
+* Câștigă cei cu cele mai multe puncte la final.
 
-# [ROMANIAN]: Despre engine-ul „Ce spun românii”
-Acesta este un engine pentru un joc bazazt pe  emisiunea „Ce spun românii” cu CABRAAAAAALLL! L-am făcut acum 3 luni, pe 12 Februarie, dar e nașpa așa că vreau să îl îmbunătățesc. Este alcătuit din două părți: un bot de Discord pentru partea cu butonul (mai multe la „Instrucțiuni joc”) și un joc făcut în scratch pentru partea de joc. Instrucțiuni de folosire pentru amândouă vor fi mai jos în README. Bot-ul este de rahat deoarece este făcut în [BDFD](https://nilpointer-software.github.io/bdfd-wiki/foreword.html), folosing BDFScript așa că este foarte de rahat, are niste erori si nu este activ decât dacă plătești prin bani sau prin uitat la reclame deoarece hosting-ul este nespus de scump. Din acest motiv doresc să îl refac complet în Autocode, folosing JavaScript.
+# Controalele jocului, pentru gazda/Cabral pentru [engine-ul facut in Unity](https://ghiocel-games.com/csreapp)
 
+![1](https://i.imgur.com/YdgFJpO.png)
+![2](https://i.imgur.com/uwkxSL5.png)
+![3](https://i.imgur.com/KJFT8JK.png)
+![4](https://i.imgur.com/apzGyCo.png)
+
+# [Adăugați bot-ul de Discord CabralBot](https://discord.com/api/oauth2/authorize?client_id=1057632508616900608&permissions=8&scope=bot)
 ## Instrucțiuni program Scratch:
 Programul în Scratch este destul de ușor de folosit:
 * Descărcați [programul](https://github.com/Vladutzu27/ce-spun-romanii/blob/main/Scratch%20engine/Ce_spun_romanii_engine.sb3) SAU [folosiți-l online](https://scratch.mit.edu/projects/698995116/) pentru exemplu
@@ -64,5 +77,3 @@ de răspunsuri și de scorul fiecăruia (sau mai ușor, printați tot)
 **Pentru a trece la următoarea întrebare apăsați pe tasta Q**
 
 ups, am uitat, dar ca sa dai reveal la raspuns apesi pe cifra aia, pe nuberpad sau pe tastatura
-
-## COMING SOON: Instrucțiuni folosire bot
