@@ -26,6 +26,10 @@ public class SettingsScript : MonoBehaviour
         Oftat.SetActive(OftatBool);
         SFX.SetActive(SFXBool);
         Fullscreen.SetActive(FullscreenBool);
+        PlayerPrefs.SetInt("MuzicaBool", MuzicaBool ? 1 : 0);
+        PlayerPrefs.SetInt("OftatBool", MuzicaBool ? 1 : 0);
+        PlayerPrefs.SetInt("SFXBool", MuzicaBool ? 1 : 0);
+        PlayerPrefs.SetInt("FullscreenBool", MuzicaBool ? 1 : 0);
     }
 
     void Update()
@@ -54,6 +58,7 @@ public class SettingsScript : MonoBehaviour
             Muzica.SetActive(true);
         }
         MuzicaBool = !MuzicaBool;
+        PlayerPrefs.SetInt("MuzicaBool", MuzicaBool ? 1 : 0);
         UnityEngine.Debug.Log("Muzica");
         if(MuzicaBool)
         {
@@ -76,6 +81,7 @@ public class SettingsScript : MonoBehaviour
             Oftat.SetActive(true);
         }
         OftatBool = !OftatBool;
+        PlayerPrefs.SetInt("OftatBool", OftatBool ? 1 : 0);
         UnityEngine.Debug.Log("Oftat");
         if(OftatBool)
         {
@@ -98,6 +104,8 @@ public class SettingsScript : MonoBehaviour
             SFX.SetActive(true);
         }
         SFXBool = !SFXBool;
+        PlayerPrefs.SetInt("SFXBool", SFXBool ? 1 : 0);
+
         UnityEngine.Debug.Log("SFX");
         if(SFXBool)
         {
@@ -120,6 +128,7 @@ public class SettingsScript : MonoBehaviour
             Fullscreen.SetActive(true);
         }
         FullscreenBool = !FullscreenBool;
+        PlayerPrefs.SetInt("FullscreenBool", FullscreenBool ? 1 : 0);
         UnityEngine.Debug.Log("Fullscreen");
         if(FullscreenBool)
         {

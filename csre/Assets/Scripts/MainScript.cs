@@ -44,9 +44,9 @@ public class MainScript : MonoBehaviour
     }
     void Start()
     {
-        Debug.Log("in ms -> " + JSONScript.instance.q1a1);
-        Debug.Log("coaiele mele -> " + JSONScript.instance.decoi);
         Q.text = JSONScript.instance.q1q;
+
+        CateRasp.instance.CateRaspunsuri(1);
 
         A1.text = TextScript.instance.GetAnswer(JSONScript.instance.q1a1);
         A2.text = TextScript.instance.GetAnswer(JSONScript.instance.q1a2);
@@ -81,13 +81,18 @@ public class MainScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Alpha6) || Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Alpha8))
         {
             Debug.Log("Bun");
-            bun.Play();
+            if (PlayerPrefs.GetInt("SFXBool") == 1)
+                bun.Play();
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            jingle.Play();
-            Debug.Log("jingle");
+            if (PlayerPrefs.GetInt("MuzicaBool") == 1)
+            {
+                Debug.Log("jingle");
+                jingle.Play();
+            }
         }
+
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             Numere.instance.PuneLaLoc();
@@ -95,6 +100,8 @@ public class MainScript : MonoBehaviour
             if (question == 1)
             {
                 Q.text = JSONScript.instance.q2q;
+
+                CateRasp.instance.CateRaspunsuri(2);
 
                 A1.text = TextScript.instance.GetAnswer(JSONScript.instance.q2a1);
                 A2.text = TextScript.instance.GetAnswer(JSONScript.instance.q2a2);
@@ -128,6 +135,8 @@ public class MainScript : MonoBehaviour
             {
                 Q.text = JSONScript.instance.q3q;
 
+                CateRasp.instance.CateRaspunsuri(3);
+
                 A1.text = TextScript.instance.GetAnswer(JSONScript.instance.q3a1);
                 A2.text = TextScript.instance.GetAnswer(JSONScript.instance.q3a2);
                 A3.text = TextScript.instance.GetAnswer(JSONScript.instance.q3a3);
@@ -160,6 +169,8 @@ public class MainScript : MonoBehaviour
             {
                 Q.text = JSONScript.instance.q4q;
 
+                CateRasp.instance.CateRaspunsuri(4);
+
                 A1.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a1);
                 A2.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a2);
                 A3.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a3);
@@ -191,6 +202,8 @@ public class MainScript : MonoBehaviour
             else if (question == 4)
             {
                 Q.text = JSONScript.instance.q5q;
+                
+                CateRasp.instance.CateRaspunsuri(5);
 
                 A1.text = TextScript.instance.GetAnswer(JSONScript.instance.q5a1);
                 A2.text = TextScript.instance.GetAnswer(JSONScript.instance.q5a2);
@@ -200,6 +213,16 @@ public class MainScript : MonoBehaviour
                 A6.text = TextScript.instance.GetAnswer(JSONScript.instance.q5a6);
                 A7.text = TextScript.instance.GetAnswer(JSONScript.instance.q5a7);
                 A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q5a8);
+                A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a8);
+                A1.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a1));
+                A2.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a2));
+                A3.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a3));
+                A4.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a4));
+                A5.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a5));
+                A6.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a6));
+                A7.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a7));
+                A8.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a8));
+
 
                 S1.text = TextScript.instance.GetScore(JSONScript.instance.q5a1);
                 S2.text = TextScript.instance.GetScore(JSONScript.instance.q5a2);
@@ -216,6 +239,8 @@ public class MainScript : MonoBehaviour
             {
                 Q.text = JSONScript.instance.q6q;
 
+                CateRasp.instance.CateRaspunsuri(6);
+
                 A1.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a1);
                 A2.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a2);
                 A3.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a3);
@@ -224,6 +249,16 @@ public class MainScript : MonoBehaviour
                 A6.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a6);
                 A7.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a7);
                 A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a8);
+                A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a8);
+                A1.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a1));
+                A2.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a2));
+                A3.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a3));
+                A4.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a4));
+                A5.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a5));
+                A6.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a6));
+                A7.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a7));
+                A8.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a8));
+
 
                 S1.text = TextScript.instance.GetScore(JSONScript.instance.q6a1);
                 S2.text = TextScript.instance.GetScore(JSONScript.instance.q6a2);

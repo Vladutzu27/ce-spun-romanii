@@ -10,7 +10,11 @@ public class MenuScript : MonoBehaviour
 
     void Start()
     {
-        if(SettingsScript.MuzicaBool == true)
+        PlayerPrefs.SetInt("MuzicaBool", true ? 1 : 0);
+        PlayerPrefs.SetInt("OftatBool", false ? 1 : 0);
+        PlayerPrefs.SetInt("SFXBool", true ? 1 : 0);
+        PlayerPrefs.SetInt("FullscreenBool", true ? 1 : 0);
+        if (PlayerPrefs.GetInt("MuzicaBool") == 1)
         {
             muzica.Play();
         }

@@ -10,6 +10,7 @@ public class icsuri : MonoBehaviour
     public GameObject icsicsics;
 
     public AudioSource bzz;
+    public AudioSource bzzof;
 
     private void Start()
     {
@@ -37,8 +38,12 @@ public class icsuri : MonoBehaviour
 
     IEnumerator WaitForSeconds(GameObject x)
     {
-        bzz.Play();
-        x.SetActive(true);
+        if (PlayerPrefs.GetInt("SFXBool") == 1 || PlayerPrefs.GetInt("OftatBool") == 0)
+            bzz.Play();
+        else if (PlayerPrefs.GetInt("SFXBool") == 1 || PlayerPrefs.GetInt("OftatBool") == 1)
+            bzzof.Play();
+
+            x.SetActive(true);
         yield return new WaitForSeconds(1);
         x.SetActive(false);
     }

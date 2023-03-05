@@ -6,13 +6,22 @@ public class JSONScript : MonoBehaviour
 {
 
     public static JSONScript instance;
-    public TextAsset jsonFile;
+    public TextAsset jsonFile1;
+    public TextAsset jsonFile2;
 
     void Awake()
     {
         instance = this;
+        string jsonString = "";
+        if (PlayerPrefs.GetInt("slot") == 1)
+            jsonString = jsonFile1.text;
+        else if (PlayerPrefs.GetInt("slot") == 2)
+            jsonString = jsonFile2.text;
+        else if (PlayerPrefs.GetInt("slot") == 69)
+            jsonString = ImportJSON.instance.gameData.text;
+        else
+            jsonString = jsonFile1.text;
 
-        string jsonString = jsonFile.text;
         MyData myData = JsonUtility.FromJson<MyData>(jsonString);
         q1a1 = myData.q1.a1;
         q1a2 = myData.q1.a2;
