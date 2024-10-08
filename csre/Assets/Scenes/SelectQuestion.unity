@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 592928413}
   - component: {fileID: 592928416}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Custom Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -691,7 +691,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1057835486
 GameObject:
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 1152876109}
   - component: {fileID: 1152876108}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Slot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1402,7 +1402,7 @@ GameObject:
   - component: {fileID: 1489957352}
   - component: {fileID: 1489957351}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Slot4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1537,17 +1537,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553294261}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.20625, y: 1.20625, z: 1.20625}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2143656788}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 42.55}
+  m_AnchoredPosition: {x: 284.43784, y: 215.61151}
   m_SizeDelta: {x: 294.9, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1553294263
@@ -1737,7 +1737,7 @@ GameObject:
   - component: {fileID: 1816222327}
   - component: {fileID: 1816222326}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Slot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1962,7 +1962,7 @@ RectTransform:
   m_Children:
   - {fileID: 116551899}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2153,7 +2153,7 @@ GameObject:
   - component: {fileID: 2002122260}
   - component: {fileID: 2002122259}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Slot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2368,7 +2368,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1752674735}
-  - {fileID: 1553294262}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

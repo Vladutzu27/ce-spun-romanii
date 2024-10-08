@@ -1,1 +1,68 @@
-{"q1":{"q":"La ce stil de dans ți-e greu să ți pasul cu partenerul?","a1":"Tango$34","a2":"Vals$16","a3":"Salsa$9","a4":"Rumba$9","a5":"Samba$7","a6":"Sârbă$5","a7":"Horă$5","a8":"Cha-cha-cha$5"},"q2":{"q":"Smiley zice că are bani de dat. Tu ce poți da cu ușurință, dacă îți cere cineva?","a1":"Sfaturi$27","a2":"Haine$20","a3":"Mâncare$15","a4":"Ajutor$10","a5":"Dragoste$8","a6":"Cărți$6","a7":"Un pahar cu apă$3","a8":""},"q3":{"q":"Ce nu îți place să mănânci dacă nu are sos suficient","a1":"Paste$46","a2":"Șaorma$17","a3":"Mâncare de cartofi$11","a4":"Chiftele marinate$9","a5":"Pizza$7","a6":"Burger$3","a7":"Ostropel$3","a8":"Pui cu smântână$3"},"q4":{"q":"Ce cumperi în recipient de 100ml dacă pleci cu avionul în vacanță și nu ai bagaj de cală?","a1":"Parfum$35","a2":"Apă$22","a3":"Șampon$21","a4":"Gel de duș$11","a5":"Pastă de dinți$3","a6":"Cafea$3","a7":"Suc$2","a8":"Alcool$2"},"q5":{"q":"Ce pasăre impunătoare vezi pe stema unei familii regale?","a1":"Vultur$45","a2":"Phoenix$19","a3":"Șoim$11","a4":"Acvilă$8","a5":"Paun$7","a6":"Bufniță$4","a7":"Corb$3","a8":""},"q6":{"q":"Călătorești într-un alt oraș, într-un microbuz, ce face șoferul de îți vine să te dai jos din mers","a1":"Conduce cu viteză$31","a2":"Dă muzica la maximum$22","a3":"Stă pe telefon$14","a4":"Frâmează brusc$11","a5":"Ia curbele periculos$8","a6":"Fumează$6","a7":"Vorbește cu pasagerii$4","a8":""}}
+{
+  "q1": {
+    "q": "La ce stil de dans ți-e greu să ți pasul cu partenerul?",
+    "a1": "Tango$34",
+    "a2": "Vals$16",
+    "a3": "Salsa$9",
+    "a4": "Rumba$9",
+    "a5": "Samba$7",
+    "a6": "Sârbă$5",
+    "a7": "Horă$5",
+    "a8": "Cha-cha-cha$5"
+  },
+  "q2": {
+    "q": "Smiley zice că are bani de dat. Tu ce poți da cu ușurință, dacă îți cere cineva?",
+    "a1": "Sfaturi$27",
+    "a2": "Haine$20",
+    "a3": "Mâncare$15",
+    "a4": "Ajutor$10",
+    "a5": "Dragoste$8",
+    "a6": "Cărți$6",
+    "a7": "Un pahar cu apă$3",
+    "a8": ""
+  },
+  "q3": {
+    "q": "Ce nu îți place să mănânci dacă nu are sos suficient",
+    "a1": "Paste$46",
+    "a2": "Șaorma$17",
+    "a3": "Mâncare de cartofi$11",
+    "a4": "Chiftele marinate$9",
+    "a5": "Pizza$7",
+    "a6": "Burger$3",
+    "a7": "Ostropel$3",
+    "a8": "Pui cu smântână$3"
+  },
+  "q4": {
+    "q": "Ce cumperi în recipient de 100ml dacă pleci cu avionul în vacanță și nu ai bagaj de cală?",
+    "a1": "Parfum$35",
+    "a2": "Apă$22",
+    "a3": "Șampon$21",
+    "a4": "Gel de duș$11",
+    "a5": "Pastă de dinți$3",
+    "a6": "Cafea$3",
+    "a7": "Suc$2",
+    "a8": "Alcool$2"
+  },
+  "q5": {
+    "q": "Ce pasăre impunătoare vezi pe stema unei familii regale?",
+    "a1": "Vultur$45",
+    "a2": "Phoenix$19",
+    "a3": "Șoim$11",
+    "a4": "Acvilă$8",
+    "a5": "Paun$7",
+    "a6": "Bufniță$4",
+    "a7": "Corb$3",
+    "a8": ""
+  },
+  "q6": {
+    "q": "Călătorești într-un alt oraș, într-un microbuz, ce face șoferul de îți vine să te dai jos din mers",
+    "a1": "Conduce cu viteză$31",
+    "a2": "Dă muzica la maximum$22",
+    "a3": "Stă pe telefon$14",
+    "a4": "Frâmează brusc$11",
+    "a5": "Ia curbele periculos$8",
+    "a6": "Fumează$6",
+    "a7": "Vorbește cu pasagerii$4",
+    "a8": ""
+  }
+}

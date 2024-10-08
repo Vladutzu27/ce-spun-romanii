@@ -7,6 +7,8 @@ public class CateRasp : MonoBehaviour
     public GameObject ans6;
     public GameObject ans7;
 
+    public int Cate;
+
     public static CateRasp instance;
 
     void Awake()
@@ -25,11 +27,13 @@ public class CateRasp : MonoBehaviour
                     ans6.SetActive(true);
                     Numere.instance.sapte.SetActive(false);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 6;
                 }
                 else
                 {
                     ans7.SetActive(true);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 7;
                 }
             }
             else
@@ -38,6 +42,7 @@ public class CateRasp : MonoBehaviour
                 ans7.SetActive(false);
                 Numere.instance.sapte.SetActive(true);
                 Numere.instance.opt.SetActive(true);
+                Cate = 8;
             }
         }
         else if (x == 2)
@@ -49,11 +54,13 @@ public class CateRasp : MonoBehaviour
                     ans6.SetActive(true);
                     Numere.instance.sapte.SetActive(false);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 6;
                 }
                 else
                 {
                     ans7.SetActive(true);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 7;
                 }
             }
             else
@@ -62,6 +69,7 @@ public class CateRasp : MonoBehaviour
                 ans7.SetActive(false);
                 Numere.instance.sapte.SetActive(true);
                 Numere.instance.opt.SetActive(true);
+                Cate = 8;
             }
         }
         if (x == 3)
@@ -73,11 +81,13 @@ public class CateRasp : MonoBehaviour
                     ans6.SetActive(true);
                     Numere.instance.sapte.SetActive(false);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 6;
                 }
                 else
                 {
                     ans7.SetActive(true);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 7;
                 }
             }
             else
@@ -86,6 +96,7 @@ public class CateRasp : MonoBehaviour
                 ans7.SetActive(false);
                 Numere.instance.sapte.SetActive(true);
                 Numere.instance.opt.SetActive(true);
+                Cate = 8;
             }
         }
         if (x == 4)
@@ -97,11 +108,13 @@ public class CateRasp : MonoBehaviour
                     ans6.SetActive(true);
                     Numere.instance.sapte.SetActive(false);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 6;
                 }
                 else
                 {
                     ans7.SetActive(true);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 7;
                 }
             }
             else
@@ -110,6 +123,7 @@ public class CateRasp : MonoBehaviour
                 ans7.SetActive(false);
                 Numere.instance.opt.SetActive(true);
                 Numere.instance.sapte.SetActive(true);
+                Cate = 8;
             }
         }
         if (x == 5)
@@ -121,11 +135,13 @@ public class CateRasp : MonoBehaviour
                     ans6.SetActive(true);
                     Numere.instance.sapte.SetActive(false);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 6;
                 }
                 else
                 {
                     ans7.SetActive(true);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 7;
                 }
             }
             else
@@ -134,6 +150,7 @@ public class CateRasp : MonoBehaviour
                 ans7.SetActive(false);
                 Numere.instance.sapte.SetActive(true);
                 Numere.instance.opt.SetActive(true);
+                Cate = 8;
             }
         }
         if (x == 6)
@@ -145,11 +162,13 @@ public class CateRasp : MonoBehaviour
                     ans6.SetActive(true);
                     Numere.instance.sapte.SetActive(false);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 6;
                 }
                 else
                 {
                     ans7.SetActive(true);
                     Numere.instance.opt.SetActive(false);
+                    Cate = 7;
                 }
             }
             else
@@ -158,6 +177,7 @@ public class CateRasp : MonoBehaviour
                 ans7.SetActive(false);
                 Numere.instance.sapte.SetActive(true);
                 Numere.instance.opt.SetActive(true);
+                Cate = 8;
             }
         }
     }

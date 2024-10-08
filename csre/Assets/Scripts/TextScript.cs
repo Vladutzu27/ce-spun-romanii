@@ -59,20 +59,21 @@ public class TextScript : MonoBehaviour
 
     public float GetSize(string x)
     {
-        if(x.Length < 14)
-        {
-            return 86.38f;
-        }
-        else
-        {
-            if(x.Length < 20)
-                return 70f;
-            if (x.Length < 25)
-                return 60f;
-            if (x.Length < 30)
-                return 53f;
-            else
-                return 50;
-        }
+        return 86.38f;
+    //    if(x.Length < 14)
+    //    {
+    //        return 86.38f;
+    //    }
+    //    else
+    //    {
+    //        if(x.Length < 20)
+    //            return 70f;
+    //        if (x.Length < 25)
+    //            return 60f;
+    //        if (x.Length < 30)
+    //            return 53f;
+    //        else
+    //            return 50;
+    //    }
     }
 }

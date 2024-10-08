@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
-    public AudioSource muzica;
+    public AudioClip theme;
+    public AudioClip bass;
+
+    public AudioSource themeSource;
+    public AudioSource bassSource;
+    public GameObject Controale;
+
+    public bool full = true;
 
     void Start()
     {
@@ -14,24 +20,85 @@ public class MenuScript : MonoBehaviour
         PlayerPrefs.SetInt("OftatBool", false ? 1 : 0);
         PlayerPrefs.SetInt("SFXBool", true ? 1 : 0);
         PlayerPrefs.SetInt("FullscreenBool", true ? 1 : 0);
-        if (PlayerPrefs.GetInt("MuzicaBool") == 1)
-        {
-            muzica.Play();
-        }
+        
+        // Play both sources from the start but mute the bass initially
+        themeSource.clip = theme;
+        bassSource.clip = bass;
+        
+        themeSource.loop = true;
+        bassSource.loop = true;
+        
+        themeSource.Play();
+        bassSource.Play();
+        
+        bassSource.volume = 0; // Only play the theme initially
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene("SelectQuestion");
-        UnityEngine.Debug.Log("Jocul a inceput");
+        Debug.Log("Jocul a inceput");
     }
 
     public void Options()
     {
         SceneManager.LoadScene("Setări");
     }
+
     public void Controls()
     {
-        SceneManager.LoadScene("Controls");
+        // LEGACY: SceneManager.LoadScene("Controls");
+
+    }
+
+    public void Schimba()
+    {
+        if (full)
+        {
+            // Reduce the themeSource volume and increase bassSource volume
+            StartCoroutine(FadeOut(themeSource));
+            StartCoroutine(FadeIn(bassSource));
+            Controale.SetActive(true);
+        }
+        else
+        {
+            // Reduce the bassSource volume and increase themeSource volume
+            StartCoroutine(FadeOut(bassSource));
+            StartCoroutine(FadeIn(themeSource));
+            Controale.SetActive(false);
+        }
+        full = !full;
+    }
+
+    private IEnumerator FadeIn(AudioSource source, float duration = 1f)
+    {
+        float targetVolume = 1f;
+        float startVolume = source.volume;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            source.volume = Mathf.Lerp(startVolume, targetVolume, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        source.volume = targetVolume;
+    }
+
+    private IEnumerator FadeOut(AudioSource source, float duration = 1f)
+    {
+        float targetVolume = 0f;
+        float startVolume = source.volume;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            source.volume = Mathf.Lerp(startVolume, targetVolume, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        source.volume = targetVolume;
     }
 }
