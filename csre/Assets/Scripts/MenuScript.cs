@@ -12,6 +12,8 @@ public class MenuScript : MonoBehaviour
     public AudioSource bassSource;
     public GameObject Controale;
 
+    public GameObject splash;
+
     public bool full = true;
 
     void Start()
@@ -47,18 +49,20 @@ public class MenuScript : MonoBehaviour
 
     public void Controls()
     {
-        // LEGACY: SceneManager.LoadScene("Controls");
-
+        // LEGACY: SceneManager.LoadScene("Controls")
     }
 
     public void Schimba()
     {
+        VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip1);
+        TutorialScript.instance.tutorialText.text = "Pentru a afișa un răspuns, apăsați pe numărul corespunzător răspunsului.";
         if (full)
         {
             // Reduce the themeSource volume and increase bassSource volume
             StartCoroutine(FadeOut(themeSource));
             StartCoroutine(FadeIn(bassSource));
             Controale.SetActive(true);
+            splash.SetActive(false);
         }
         else
         {
@@ -66,6 +70,7 @@ public class MenuScript : MonoBehaviour
             StartCoroutine(FadeOut(bassSource));
             StartCoroutine(FadeIn(themeSource));
             Controale.SetActive(false);
+            splash.SetActive(true);
         }
         full = !full;
     }

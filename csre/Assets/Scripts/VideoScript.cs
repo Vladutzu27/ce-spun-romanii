@@ -1,22 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Video;
+using UnityEngine.Video; // Required to use VideoPlayer
 
 public class VideoScript : MonoBehaviour
 {
+    // Reference to the cone GameObject with the VideoPlayer component
     public GameObject cone;
-    public Video.VideoClip icsuri;
-    
+
+    public static VideoScript instance;
+
+    void Awake() {  instance = this; }
+
+    // Define the clip variables publicly so you can assign them in the Editor
+    public VideoClip clip1;
+    public VideoClip clip2;
+    public VideoClip clip3;
+    public VideoClip clip4;
+
+    public VideoPlayer videoPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
-        var videoPlayer = cone.AddComponent<UnityEngine.Video.VideoPlayer>();
+        // Get the VideoPlayer component from the cone GameObject
+        videoPlayer = cone.GetComponent<VideoPlayer>();
+
+        // Optionally, start by playing the first video clip
+        videoPlayer.clip = clip1;
+        videoPlayer.Play();
+    }
+
+    // Function to switch video clips
+    public void ChangeVideoClip(VideoClip newClip)
+    {
+        videoPlayer.Stop(); // Stop current video
+        videoPlayer.clip = newClip; // Change the clip
+        videoPlayer.Play(); // Play the new clip
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
+    }
+
+    public void PlayIt()
+    {
+        videoPlayer.Play();
     }
 }
