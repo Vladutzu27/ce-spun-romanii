@@ -13,11 +13,17 @@
 * Câștigă cei cu cele mai multe puncte la final.
 
 # Controalele jocului, pentru gazda/Cabral pentru [engine-ul facut in Unity](https://ghiocel-games.com/csreapp)
-
-![1](https://i.imgur.com/YdgFJpO.png)
-![2](https://i.imgur.com/uwkxSL5.png)
-![3](https://i.imgur.com/KJFT8JK.png)
-![4](https://i.imgur.com/apzGyCo.png)
+## Pentru a afișa un răspuns, apăsați pe numărul corespunzător răspunsului.
+![1](https://i.imgur.com/ieWw2nH.gif)
+***
+## Pentru a afișa X-uri, apăsați pe [X], [C], [V] pentru unul, două respectiv 3 X-uri
+![2](https://i.imgur.com/eO7q8pX.gif)
+***
+## Scorul se va adăuga automat când cineva ghicește un răspuns de pe panou. Când o echipă câștigă runda, declarați câștigătorul folosind [A] pentru stânga sau [D] pentru dreapta și de-abia după afișați restul răspunsurilor de pe panou.
+![3](https://i.imgur.com/1B4bRFl.gif)
+***
+## Pentru a trece la următoarea rundă, apăsați tasta dreapta.
+![4](https://i.imgur.com/Z30IW6X.gif)
 
 # [Adăugați bot-ul de Discord CabralBot](https://discord.com/api/oauth2/authorize?client_id=1057632508616900608&permissions=8&scope=bot)
 ## Instrucțiuni program Scratch:
