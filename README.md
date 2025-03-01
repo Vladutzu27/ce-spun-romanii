@@ -25,8 +25,9 @@
 ## Pentru a trece la următoarea rundă, apăsați tasta dreapta.
 ![4](https://i.imgur.com/Z30IW6X.gif)
 
-# [Adăugați bot-ul de Discord CabralBot](https://discord.com/api/oauth2/authorize?client_id=1057632508616900608&permissions=8&scope=bot)
-## Instrucțiuni program Scratch:
+# ~~[Adăugați bot-ul de Discord CabralBot](https://discord.com/api/oauth2/authorize?client_id=1057632508616900608&permissions=8&scope=bot)~~
+Botul de Discord era realizat în Autocode, care a fost desființat. La un moment dat va fi înlocuit de o versiune Discord.JS.
+## Instrucțiuni program Scratch  (Învechit, păstrat public pentru a arăta originea proiectului) :
 Programul în Scratch este destul de ușor de folosit:
 * Descărcați [programul](https://github.com/Vladutzu27/ce-spun-romanii/blob/main/Scratch%20engine/Ce_spun_romanii_engine.sb3) SAU [folosiți-l online](https://scratch.mit.edu/projects/698995116/) pentru exemplu
 * Importați Screenshot-uri: Am aflat că cel mai bine marg cele făcute de pe youtube, când arată ce e pe ecran. uitați cum:
