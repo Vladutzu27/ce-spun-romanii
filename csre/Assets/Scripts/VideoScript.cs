@@ -17,6 +17,8 @@ public class VideoScript : MonoBehaviour
     public VideoClip clip2;
     public VideoClip clip3;
     public VideoClip clip4;
+    public VideoClip clip5;
+    public VideoClip clip6;
 
     public VideoPlayer videoPlayer;
 

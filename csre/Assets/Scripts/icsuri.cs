@@ -38,12 +38,12 @@ public class icsuri : MonoBehaviour
 
     IEnumerator WaitForSeconds(GameObject x)
     {
-        if (PlayerPrefs.GetInt("SFXBool") == 1 || PlayerPrefs.GetInt("OftatBool") == 0)
-            bzz.Play();
-        else if (PlayerPrefs.GetInt("SFXBool") == 1 || PlayerPrefs.GetInt("OftatBool") == 1)
+        if(PlayerPrefs.GetInt("oftat") == 1)
             bzzof.Play();
+        else
+            bzz.Play();
 
-            x.SetActive(true);
+        x.SetActive(true);
         yield return new WaitForSeconds(1);
         x.SetActive(false);
     }

@@ -11,19 +11,14 @@ public class MenuScript : MonoBehaviour
     public AudioSource themeSource;
     public AudioSource bassSource;
     public GameObject Controale;
-
+    public GameObject Setari;
+    
     public GameObject splash;
 
     public bool full = true;
 
     void Start()
-    {
-        PlayerPrefs.SetInt("MuzicaBool", true ? 1 : 0);
-        PlayerPrefs.SetInt("OftatBool", false ? 1 : 0);
-        PlayerPrefs.SetInt("SFXBool", true ? 1 : 0);
-        PlayerPrefs.SetInt("FullscreenBool", true ? 1 : 0);
-        
-        // Play both sources from the start but mute the bass initially
+    {   
         themeSource.clip = theme;
         bassSource.clip = bass;
         
@@ -33,7 +28,19 @@ public class MenuScript : MonoBehaviour
         themeSource.Play();
         bassSource.Play();
         
-        bassSource.volume = 0; // Only play the theme initially
+        bassSource.volume = 0;
+    }
+
+    void Update()
+    {
+        if (!full && Input.GetKeyDown(KeyCode.Escape))
+        {
+            StartCoroutine(FadeOut(bassSource));
+            StartCoroutine(FadeIn(themeSource));
+            Controale.SetActive(false);
+            splash.SetActive(true);
+            full = !full;
+        }
     }
 
     public void StartGame()
@@ -44,7 +51,7 @@ public class MenuScript : MonoBehaviour
 
     public void Options()
     {
-        SceneManager.LoadScene("Setări");
+        Setari.SetActive(!Setari.activeSelf);
     }
 
     public void Controls()
@@ -58,7 +65,6 @@ public class MenuScript : MonoBehaviour
         TutorialScript.instance.tutorialText.text = "Pentru a afișa un răspuns, apăsați pe numărul corespunzător răspunsului.";
         if (full)
         {
-            // Reduce the themeSource volume and increase bassSource volume
             StartCoroutine(FadeOut(themeSource));
             StartCoroutine(FadeIn(bassSource));
             Controale.SetActive(true);
@@ -66,7 +72,6 @@ public class MenuScript : MonoBehaviour
         }
         else
         {
-            // Reduce the bassSource volume and increase themeSource volume
             StartCoroutine(FadeOut(bassSource));
             StartCoroutine(FadeIn(themeSource));
             Controale.SetActive(false);

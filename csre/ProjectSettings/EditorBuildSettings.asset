@@ -12,12 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Jocul.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: "Assets/Scenes/Set\u0103ri.unity"
-    guid: ca1f450b2988e29479ec8bfe51656388
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
     path: Assets/Scenes/Controls.unity
     guid: 08aa318b90d27dd4082bb596c0f34a84
   - enabled: 1

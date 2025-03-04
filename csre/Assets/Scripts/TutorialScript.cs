@@ -45,13 +45,27 @@ public class TutorialScript : MonoBehaviour
                 {
                     if (clipNumber == 4)
                     {
-                        VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip1);
-                        clipNumber = 1;
-                        tutorialText.text = "Pentru a afișa un răspuns, apăsați pe numărul corespunzător răspunsului.";
+                        VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip5);
+                        clipNumber++;
+                        tutorialText.text = "Pentru a alege aleator dintre echipe, apăsați B.";
                     }
                     else
                     {
-                        Debug.Log("niciuna nu s-a potrivit vere");
+                        if (clipNumber == 5)
+                        {
+                            VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip6);
+                            clipNumber++;
+                            tutorialText.text = "Rotind rotița mouse-ului, puteți schimba muliplicatorul scorului, dublându-l sau triplându-l. Acesta este resetat la următoarea întrebare.";
+                        }
+                        else
+                        {
+                            if (clipNumber == 6)
+                            {
+                                VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip1);
+                                clipNumber = 1;
+                                tutorialText.text = "Pentru a afișa un răspuns, apăsați pe numărul corespunzător răspunsului.";
+                            }
+                        }
                     }
                 }
             }
@@ -62,9 +76,9 @@ public class TutorialScript : MonoBehaviour
     {
         if (clipNumber == 1)
         {
-            VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip4);
-            clipNumber = 4;
-            tutorialText.text = "Pentru a trece la următoarea rundă, apăsați tasta dreapta.";
+            VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip6);
+            clipNumber = 6;
+            tutorialText.text = "Rotind rotița mouse-ului, puteți schimba muliplicatorul scorului, dublându-l sau triplându-l. Acesta este resetat la următoarea întrebare.";
         }
         else
         {
@@ -92,7 +106,21 @@ public class TutorialScript : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("niciuna nu s-a potrivit vere");
+                        if (clipNumber == 5)
+                        {
+                            VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip4);
+                            clipNumber--;
+                            tutorialText.text = "Pentru a trece la următoarea rundă, apăsați tasta dreapta.";
+                        }
+                        else
+                        {
+                            if (clipNumber == 6)
+                            {
+                                VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip5);
+                                clipNumber--;
+                                tutorialText.text = "Pentru a alege aleator dintre echipe, apăsați B.";
+                            }
+                        }
                     }
                 }
             }

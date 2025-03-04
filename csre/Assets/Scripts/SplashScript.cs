@@ -21,12 +21,23 @@ public class SplashScript : MonoBehaviour
                 "CU CAAAABRAAALLL",
                 "AM ÎNTREBAT O SUTĂ DE ROMÂNI",
                 "COMPLET OPEN SOURCE",
+                "CIUPERCI CU SMÂNTÂNĂ",
+                "UN CÂINE?",
             };
     }
 
     void Start()
     {
         splash.text = GetSplash();
+        Debug.Log(GetSplash());
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            splash.text = GetSplash();
+        }
     }
 
     public string GetSplash()

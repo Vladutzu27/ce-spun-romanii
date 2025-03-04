@@ -5,6 +5,7 @@ using UnityEngine;
 using TMPro;
 using Mono.Cecil.Cil;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class MainScript : MonoBehaviour
 {
@@ -36,14 +37,68 @@ public class MainScript : MonoBehaviour
     public TextMeshProUGUI S7;
     public TextMeshProUGUI S8;
 
+    //mult vine de la multiplier, nu este opusul lui puțin
+    public int mult;
+    public GameObject multObject;
+    public TextMeshProUGUI multText;
+    public AudioSource mult1;
+    public AudioSource mult2;
+    public AudioSource mult3;
+
+    public GameObject titrare;
+
+
     // Start is called before the first frame update
 
     private void Awake()
     {
         instance = this;
     }
+
+    public int CateIntrebariAvem()
+    {
+        if (JSONScript.instance.q1a1 != "")
+        {
+            if (JSONScript.instance.q2a1 != "")
+            {
+                if (JSONScript.instance.q3a1 != "")
+                {
+                    if (JSONScript.instance.q4a1 != "")
+                    {
+                        if (JSONScript.instance.q5a1 != "")
+                        {
+                            if (JSONScript.instance.q6a1 != "")
+                            {
+                                return 6;
+                            }
+                            else
+                                return 5;
+                        }
+                        else
+                            return 4;
+                    }
+                    else
+                        return 3;
+                }
+                else
+                    return 2;
+            }
+            else
+                return 1;
+        }
+        else
+            return 0;
+    }
+
     void Start()
     {
+        if (PlayerPrefs.GetInt("titrare") == 0)
+            titrare.SetActive(false);
+
+        mult = 1;
+
+        Debug.Log("Avem " + CateIntrebariAvem() + " intrebari");
+        Debug.Log("Question este egal cu " + question + ".");
         Q.text = JSONScript.instance.q1q;
 
         CateRasp.instance.CateRaspunsuri(1);
@@ -78,12 +133,22 @@ public class MainScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Alpha6) || Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Alpha8))
-        {
-            Debug.Log("Bun");
-            if (PlayerPrefs.GetInt("SFXBool") == 1)
-                bun.Play();
-        }
+        if (Input.GetKeyDown(KeyCode.Alpha1) && !ScoreScript.instance.unuLuat)
+            bun.Play();
+        if (Input.GetKeyDown(KeyCode.Alpha2) && !ScoreScript.instance.doiLuat)
+            bun.Play();
+        if (Input.GetKeyDown(KeyCode.Alpha3) && !ScoreScript.instance.treiLuat)
+            bun.Play();
+        if (Input.GetKeyDown(KeyCode.Alpha4) && !ScoreScript.instance.patruLuat)
+            bun.Play();
+        if (Input.GetKeyDown(KeyCode.Alpha5) && !ScoreScript.instance.cinciLuat)
+            bun.Play();
+        if (Input.GetKeyDown(KeyCode.Alpha6) && !ScoreScript.instance.saseLuat)
+            bun.Play();
+        if (Input.GetKeyDown(KeyCode.Alpha7) && !ScoreScript.instance.sapteLuat && CateRasp.instance.Cate > 6)
+            bun.Play();
+        if (Input.GetKeyDown(KeyCode.Alpha8) && !ScoreScript.instance.optLuat && CateRasp.instance.Cate > 7)
+            bun.Play();
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (PlayerPrefs.GetInt("MuzicaBool") == 1)
@@ -93,11 +158,31 @@ public class MainScript : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.I))
+            Debug.Log("Question este la momentul apăsării egal cu " + question + ".");
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            SceneManager.LoadScene("Meniu");
+
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        {
+            StartCoroutine(Mult(false));
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+        {
+            StartCoroutine(Mult(true));
+        }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
+            mult = 1;
+            if (CateIntrebariAvem() == question)
+                SceneManager.LoadScene("Meniu");
+            CateRasp.instance.CateRaspunsuri(question + 1);
+            Debug.Log("Avem " + CateIntrebariAvem() + " intrebari");
+            Debug.Log("Question este egal cu " + question + ".");
             Numere.instance.PuneLaLoc();
             RaspunsuriScript.instance.Ascunde();
-            if (question == 1)
+            if (question == 1) 
             {
                 Q.text = JSONScript.instance.q2q;
 
@@ -130,6 +215,7 @@ public class MainScript : MonoBehaviour
                 S8.text = TextScript.instance.GetScore(JSONScript.instance.q2a8);
 
                 question++;
+                Debug.Log("Ar trebui să se fi mărit!");
             }
             else if (question == 2)
             {
@@ -213,7 +299,6 @@ public class MainScript : MonoBehaviour
                 A6.text = TextScript.instance.GetAnswer(JSONScript.instance.q5a6);
                 A7.text = TextScript.instance.GetAnswer(JSONScript.instance.q5a7);
                 A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q5a8);
-                A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a8);
                 //A1.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a1));
                 //A2.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a2));
                 //A3.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q5a3));
@@ -249,7 +334,6 @@ public class MainScript : MonoBehaviour
                 A6.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a6);
                 A7.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a7);
                 A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q6a8);
-                A8.text = TextScript.instance.GetAnswer(JSONScript.instance.q4a8);
                 //A1.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a1));
                 //A2.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a2));
                 //A3.fontSize = TextScript.instance.GetSize(TextScript.instance.GetAnswer(JSONScript.instance.q6a3));
@@ -272,5 +356,22 @@ public class MainScript : MonoBehaviour
                 question++;
             }
         }
+    }
+    IEnumerator Mult(bool Sus)
+    {
+        if (Sus && mult <3)
+            mult++;
+        else if (!Sus && mult > 1)
+            mult--;
+        multObject.SetActive(true);
+        multText.text = mult.ToString() + "x";
+        if (mult == 1)
+            mult1.Play();
+        else if (mult == 2)
+            mult2.Play();
+        else if (mult == 3)
+            mult3.Play();
+        yield return new WaitForSeconds(1);
+        multObject.SetActive(false);
     }
 }

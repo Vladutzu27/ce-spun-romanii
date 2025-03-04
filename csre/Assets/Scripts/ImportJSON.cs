@@ -20,6 +20,7 @@ public class ImportJSON : MonoBehaviour
     {
         // Set filters (optional)
         FileBrowser.SetFilters(true, new FileBrowser.Filter("JSON Files", ".json"));
+        FileBrowser.SetDefaultFilter(".json");
 
         // Show a load file dialog and wait for a response from the user
         StartCoroutine(ShowLoadDialogCoroutine());
@@ -28,7 +29,7 @@ public class ImportJSON : MonoBehaviour
     private IEnumerator ShowLoadDialogCoroutine()
     {
         // Show a load file dialog and wait for a response from the user
-        yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.Files, false, null, null, "Load JSON File", "Load");
+        yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.Files, false, null, null, "Selectează fișierul JSON", "Bagă");
 
         // Check if the user has selected a file
         if (FileBrowser.Success)

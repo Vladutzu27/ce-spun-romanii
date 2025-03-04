@@ -74,11 +74,11 @@ public class RaspunsuriScript : MonoBehaviour
         {
             sase.SetActive(true);
         }
-        if(Input.GetKeyDown(KeyCode.Alpha7) && CateRasp.instance.Cate >= 7)
+        if(Input.GetKeyDown(KeyCode.Alpha7))
         {
             sapte.SetActive(true);
         }
-        if(Input.GetKeyDown(KeyCode.Alpha8) && CateRasp.instance.Cate == 8)
+        if(Input.GetKeyDown(KeyCode.Alpha8))
         {
             opt.SetActive(true);
         }

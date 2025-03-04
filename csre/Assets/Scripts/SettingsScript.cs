@@ -2,141 +2,60 @@ using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class SettingsScript : MonoBehaviour
 {
-    public GameObject Muzica;
-    public GameObject Oftat;
-    public GameObject SFX;
-    public GameObject Fullscreen;
-    public GameObject VolumObject;
-    public static bool MuzicaBool = true;
-    public static bool OftatBool;
-    public static bool SFXBool = true;
-    public static bool FullscreenBool = true;
-    public static float VolumFloat = 1f;
-    public AudioSource on;
-    public AudioSource off;
+    public GameObject butonOftat;
+    public GameObject butonTitrare;
+
+    public bool oftat;
+    public bool titrare;
+
     public static SettingsScript instance;
 
     void Awake()
     {
         instance = this;
-        Muzica.SetActive(MuzicaBool);
-        Oftat.SetActive(OftatBool);
-        SFX.SetActive(SFXBool);
-        Fullscreen.SetActive(FullscreenBool);
-        PlayerPrefs.SetInt("MuzicaBool", MuzicaBool ? 1 : 0);
-        PlayerPrefs.SetInt("OftatBool", MuzicaBool ? 1 : 0);
-        PlayerPrefs.SetInt("SFXBool", MuzicaBool ? 1 : 0);
-        PlayerPrefs.SetInt("FullscreenBool", MuzicaBool ? 1 : 0);
+        oftat = false;
+        titrare = false;
+        PlayerPrefs.SetInt("oftat", 0);
+        PlayerPrefs.SetInt("titrare", 0);
     }
 
     void Update()
     {
-        UnityEngine.Debug.Log(MuzicaBool + " " + OftatBool + " " + SFXBool + " " + FullscreenBool + " " + VolumFloat);
-    }
-
-    public void Menu()
-    {
-        SceneManager.LoadScene("Meniu");
-    }
-
-    public void Volum()
-    {
-        AudioListener.volume = VolumFloat;
-    }
-
-    public void MuzicaOn()
-    {
-        if (MuzicaBool)
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            Muzica.SetActive(false);
-        }
-        else
-        {
-            Muzica.SetActive(true);
-        }
-        MuzicaBool = !MuzicaBool;
-        PlayerPrefs.SetInt("MuzicaBool", MuzicaBool ? 1 : 0);
-        UnityEngine.Debug.Log("Muzica");
-        if(MuzicaBool)
-        {
-            on.Play();
-        }
-        else
-        {
-            off.Play();
+            butonOftat.GetComponent<Image>().color = new Color32(180, 180, 180, 255);
+            UnityEngine.Debug.Log("S-a oprit butonul");
         }
     }
 
-    public void OftatOn()
+    public void Oftat()
     {
-        if (OftatBool)
-        {
-            Oftat.SetActive(false);
-        }
+        oftat = !oftat;
+        PlayerPrefs.SetInt("oftat", oftat ? 1 : 0);
+        if (oftat)
+            butonOftat.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
         else
-        {
-            Oftat.SetActive(true);
-        }
-        OftatBool = !OftatBool;
-        PlayerPrefs.SetInt("OftatBool", OftatBool ? 1 : 0);
-        UnityEngine.Debug.Log("Oftat");
-        if(OftatBool)
-        {
-            on.Play();
-        }
-        else
-        {
-            off.Play();
-        }
+            butonOftat.GetComponent<Image>().color = new Color32(180, 180, 180, 255);
     }
 
-    public void SFXOn()
+    public void Titrare()
     {
-        if (SFXBool)
-        {
-            SFX.SetActive(false);
-        }
+        UnityEngine.Debug.Log("Tirare");
+        titrare = !titrare;
+        PlayerPrefs.SetInt("titrare", titrare ? 1 : 0);
+        if (titrare)
+            butonTitrare.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
         else
-        {
-            SFX.SetActive(true);
-        }
-        SFXBool = !SFXBool;
-        PlayerPrefs.SetInt("SFXBool", SFXBool ? 1 : 0);
-
-        UnityEngine.Debug.Log("SFX");
-        if(SFXBool)
-        {
-            on.Play();
-        }
-        else
-        {
-            off.Play();
-        }
+            butonTitrare.GetComponent<Image>().color = new Color32(180, 180, 180, 255);
     }
 
-    public void FullscreenOn()
+    public void MultiplierUI()
     {
-        if (FullscreenBool)
-        {
-            Fullscreen.SetActive(false);
-        }
-        else
-        {
-            Fullscreen.SetActive(true);
-        }
-        FullscreenBool = !FullscreenBool;
-        PlayerPrefs.SetInt("FullscreenBool", FullscreenBool ? 1 : 0);
-        UnityEngine.Debug.Log("Fullscreen");
-        if(FullscreenBool)
-        {
-            on.Play();
-        }
-        else
-        {
-            off.Play();
-        }
+
     }
 }

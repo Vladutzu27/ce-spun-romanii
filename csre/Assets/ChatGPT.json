@@ -1,0 +1,58 @@
+{
+    "q1": {
+      "q": "Am rugat o sută de români să completeze fraza: În dimineața de Crăciun, toată familia se adună în jurul...",
+      "a1": "Bradului$40",
+      "a2": "Mesei$30",
+      "a3": "Cadourilor$15",
+      "a4": "Șemineului$8",
+      "a5": "Televizorului$4",
+      "a6": "Telefonului$3",
+      "a7": "",
+      "a8": ""
+    },
+    "q2": {
+      "q": "Ce obiect ai mereu în buzunar când pleci de acasă?",
+      "a1": "Telefon$50",
+      "a2": "Chei$25",
+      "a3": "Portofel$15",
+      "a4": "Bani$5",
+      "a5": "Batistă$3",
+      "a6": "Pix$2",
+      "a7": "",
+      "a8": ""
+    },
+    "q3": {
+      "q": "Dacă te-ai muta la țară, ce animal ai vrea să ai în gospodărie?",
+      "a1": "Câine$35",
+      "a2": "Pisică$20",
+      "a3": "Găini$15",
+      "a4": "Vacă$12",
+      "a5": "Cal$10",
+      "a6": "Oaie$8",
+      "a7": "",
+      "a8": ""
+    },
+    "q4": {
+      "q": "Ce lucru găsești mereu în frigider?",
+      "a1": "Lapte$30",
+      "a2": "Ouă$25",
+      "a3": "Brânză$20",
+      "a4": "Legume$10",
+      "a5": "Carne$8",
+      "a6": "Iaurt$7",
+      "a7": "",
+      "a8": ""
+    },
+    "q5": {
+      "q": "Ce nu trebuie să uiți să iei cu tine la plajă?",
+      "a1": "Costum de baie$40",
+      "a2": "Prosoape$20",
+      "a3": "Cremă de protecție$15",
+      "a4": "Ochelari de soare$10",
+      "a5": "Pălărie$8",
+      "a6": "Apă$7",
+      "a7": "",
+      "a8": ""
+    }
+  }
+  

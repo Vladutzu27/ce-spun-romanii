@@ -7,6 +7,12 @@ public class SelectQuestion : MonoBehaviour
 {
     public int slot;
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            SceneManager.LoadScene("Meniu");
+    }
+
     public void slot1()
     {
         slot = 1;
