@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class SelectQuestion : MonoBehaviour
 {
     public int slot;
+    public GameObject urleu;
 
     void Update()
     {

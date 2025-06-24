@@ -46,7 +46,6 @@ public class MenuScript : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("SelectQuestion");
-        Debug.Log("Jocul a inceput");
     }
 
     public void Options()
@@ -61,7 +60,7 @@ public class MenuScript : MonoBehaviour
 
     public void Schimba()
     {
-        VideoScript.instance.ChangeVideoClip(VideoScript.instance.clip1);
+        VideoScript.instance.ChangeVideoClip("tabla_1.webm");
         TutorialScript.instance.tutorialText.text = "Pentru a afișa un răspuns, apăsați pe numărul corespunzător răspunsului.";
         if (full)
         {

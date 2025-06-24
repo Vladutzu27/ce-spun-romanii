@@ -11,6 +11,12 @@ public class icsuri : MonoBehaviour
 
     public AudioSource bzz;
     public AudioSource bzzof;
+    public GameObject unu;
+    public GameObject dois;
+    public GameObject doid;
+    public GameObject treis;
+    public GameObject treic;
+    public GameObject treid;
 
     private void Start()
     {
@@ -37,14 +43,19 @@ public class icsuri : MonoBehaviour
     }
 
     IEnumerator WaitForSeconds(GameObject x)
-    {
-        if(PlayerPrefs.GetInt("oftat") == 1)
-            bzzof.Play();
-        else
-            bzz.Play();
+{
+    if(PlayerPrefs.GetInt("oftat") == 1)
+        bzzof.Play();
+    else
+        bzz.Play();
 
-        x.SetActive(true);
-        yield return new WaitForSeconds(1);
-        x.SetActive(false);
-    }
+    x.SetActive(true);
+
+    BounceEffect bounce = x.GetComponent<BounceEffect>();
+    if (bounce != null)
+        bounce.Bounce();
+
+    yield return new WaitForSeconds(1);
+    x.SetActive(false);
+}
 }

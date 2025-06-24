@@ -21,6 +21,7 @@ public class VideoScript : MonoBehaviour
     public VideoClip clip6;
 
     public VideoPlayer videoPlayer;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -34,10 +35,10 @@ public class VideoScript : MonoBehaviour
     }
 
     // Function to switch video clips
-    public void ChangeVideoClip(VideoClip newClip)
+    public void ChangeVideoClip(string videoName)
     {
         videoPlayer.Stop(); // Stop current video
-        videoPlayer.clip = newClip; // Change the clip
+        videoPlayer.url = System.IO.Path.Combine (Application.streamingAssetsPath,videoName); 
         videoPlayer.Play(); // Play the new clip
     }
 

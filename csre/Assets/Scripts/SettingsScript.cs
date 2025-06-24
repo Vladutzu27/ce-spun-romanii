@@ -9,9 +9,12 @@ public class SettingsScript : MonoBehaviour
 {
     public GameObject butonOftat;
     public GameObject butonTitrare;
+    public GameObject butonMult;
+    public GameObject Myself;
 
     public bool oftat;
     public bool titrare;
+    public bool mult;
 
     public static SettingsScript instance;
 
@@ -55,7 +58,19 @@ public class SettingsScript : MonoBehaviour
     }
 
     public void MultiplierUI()
-    {
+    {UnityEngine.Debug.Log("Mult");
+        mult = !mult;
+        PlayerPrefs.SetInt("mult", mult ? 1 : 0);
+        UnityEngine.Debug.Log("Mult este" + PlayerPrefs.GetInt("mult"));
+        if (mult)
+            butonMult.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+        else
+            butonMult.GetComponent<Image>().color = new Color32(180, 180, 180, 255);
 
+    }
+
+    public void KillMyself()
+    {
+        Myself.SetActive(false);
     }
 }
