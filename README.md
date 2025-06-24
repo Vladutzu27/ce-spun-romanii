@@ -24,6 +24,9 @@
 ***
 ## Pentru a trece la următoarea rundă, apăsați tasta dreapta.
 ![4](https://i.imgur.com/Z30IW6X.gif)
+***
+## Rotind rotița mouse-ului, puteți schimba muliplicatorul scorului, dublându-l sau triplându-l. Acesta este resetat la următoarea întrebare.
+![5](https://i.imgur.com/NPFm519.gif)
 
 # ~~[Adăugați bot-ul de Discord CabralBot](https://discord.com/api/oauth2/authorize?client_id=1057632508616900608&permissions=8&scope=bot)~~
 Botul de Discord era realizat în Autocode, care a fost desființat. La un moment dat va fi înlocuit de o versiune Discord.JS.
